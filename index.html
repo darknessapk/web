@@ -5,182 +5,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueTv Pro | Download Page</title>
-    <meta property="og:title" content="BlueTv Pro | Download Page" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url"
-      content="https://www.bluetvpro.com"/>
-    <meta property="og:image"
-      content="https://bluetvpro.com/storage/icon.jpg" />
-    <meta property="og:description" content="BlueTv Pro Download Page" />
+    <title>Zkar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /*  */
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+        @media screen and (min-width: 600px) {
+            .desk {
+                display: block;
+            }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+            .mob {
+                display: none;
+            }
 
+            @font-face {
+                font-family: 'mm';
+                src: url('assets/font.ttf') format('truetype');
+            }
+
+            body {
+                font-family: 'Mirza', cursive;
+            }
+
+            .app-icon {
+                width: 200px;
+                height: 200px;
+                margin: 20px auto;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+                border-radius: 25%;
+                /* Adjust this value to change the roundness of the corners */
+            }
+
+            .screenshot {
+                width: 200px;
+                height: auto;
+                margin: 10px;
+            }
+
+            .pricing {
+                margin-top: 20px;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .app-name {
+                text-shadow: 2px 2px #aaa;
+            }
+
+            .rating-users {
+                font-family: 'Mirza', cursive;
+                /* Use the Mirza font for the rating and users text */
+            }
+
+            .plan-description {
+                font-family: 'mm', sans-serif;
+            }
+
+            .card-header h4 {
+                font-family: 'Mirza', cursive;
+            }
+
+            .plan-description li:before {
+                content: "• ";
+            }
+        }
+
+        @media screen and (max-width: 599px) {
+            .desk {
+                display: none;
+            }
+
+            .mob {
+                display: block;
+            }
+
+            /* start */
+
+            body {
+                font-family: 'Mirza', cursive;
+            }
+
+            .img-fluid {
+                max-width: 50%;
+                height: auto;
+                margin: 0px 10px 10px 10px;
+            }
+
+            .logo {
+                width: 100px;
+                height: auto;
+                margin: auto;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+                border-radius: 25%;
+            }
+
+            .pricing {
+                margin-top: 20px;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            @font-face {
+                font-family: 'mm';
+                src: url('assets/font.ttf') format('truetype');
+            }
+
+            .plan-description {
+                font-family: 'mm', sans-serif;
+                margin: 0 15px 10px 15px;
+            }
+
+            .card-header h4 {
+                font-family: 'Mirza', cursive;
+            }
+
+            .plan-description li:before {
+                content: "• ";
+            }
+
+            /* this is row  */
+
+            .row {
+                display: flex;
+                align-items: center;
+                /* justify-content: space-between; */
+                padding: 0px;
+                /* border: 1px solid #ddd; */
+            }
+
+            .row img {
+                width: 100px;
+                height: 100px;
+            }
+
+            /* .row button {
+                padding: 10px 0px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            } */
+
+            .row button:hover {
+                background-color: #45a049;
+            }
+
+            .itwo {
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+                border-radius: 25%;
+                margin: 10px 0px 0 60px;
+            }
+
+            .column {
+                flex: 0%;
+                padding: 0px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-        <!-- Container wrapper -->
-        <div class="container">
-            <!-- Navbar brand -->
-            <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                <img width="30px" height="30px" src="https://bluetvpro.com/storage/icon.jpg" height="16" alt="MDB Logo" loading="lazy"
-                    style="margin-top: -1px;" />
-            </a>
 
-            <!-- Toggle button -->
-            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample"
-                aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <h5 class="px-3">Blue Tv Pro</h5>
-                    </li>
-                </ul>
-                <!-- Left links -->
-
-                <div class="d-flex align-items-center">
-                    <a href="/#home" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
-                        Home
-                    </a>
-                    <a href="/#news" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
-                        News
-                    </a>
-
-                    
-                    <!-- <a href="#contact" data-mdb-ripple-init class="btn btn-primary me-3">
-                        Contact Us
-                    </a> -->
-                    <div class=" d-flex justify-content-center gap-3  ">
-                        <a target="_blank"
-                            href="https://www.facebook.com/bluetv2023?mibextid=ZbWKwL"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg></a>
-                            
-                        <a target="_blank" href="https://t.me/bluetvpro">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
-                                <path style="fill: rgb(10, 135, 189);" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
-                              </svg>
-                        </a>
-                    </div>
+    <div class="desk">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img class="app-icon img-fluid mb-3" src="app-icon.png" alt="Zkar App Icon">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4 app-name"><strong>Zkar - Movies & TV Shows</strong></h1>
+                    <p class="lead rating-users">Best movie app with over 1M+ users and a rating of 4.5/5</p>
+                    <!-- Apply the Mirza font here -->
+                    <button class="btn btn-success btn-lg btn-block mb-3"
+                        onclick="openNewTab('https://www.mediafire.com/file/r8q82vbyb2of8gh/Zkar+405.apk/file')">Direct Download</button>
+                    <button class="btn btn-primary btn-lg btn-block mb-3"
+                        onclick="openNewTab('https://play.google.com/store/apps/details?id=com.zkr.mm')">Download
+                        from Play Store</button>
+                    <p class="plan-description"> မြန်မာစာတန်းထိုး ဇာတ်လမ်းများ ၊ ဇာတ်လမ်းတွဲများနှင့် ၁၈+
+                        စာတန်းထိုးဇာတ်လမ်းများ နှင့် ဘောလုံးပွဲစဉ်များကို App တစ်ခုထဲမှာ တစ်စုတစ်စည်းထဲ
+                        ရယူကြည့်ရှုလိုက်ပါ ။
+                    </p>
                 </div>
             </div>
-            <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
-
-        <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-10">
-                                    </div>
+            <div class="row justify-content-center">
+                <img class="screenshot" src="screenshot1.png" alt="Zkar App Screenshot 1">
+                <img class="screenshot" src="screenshot2.png" alt="Zkar App Screenshot 2">
+                <img class="screenshot" src="screenshot3.png" alt="Zkar App Screenshot 3">
+                <img class="screenshot" src="screenshot4.png" alt="Zkar App Screenshot 4">
+                <!-- Add more screenshots as needed -->
             </div>
-            <div class="row d-flex justify-content-center mt-5 ">
-                <div class="col-sm-5 p-3 bg-white">
-                    <h2 style="font-family: 'Black Ops One', system-ui;">Blue Tv Pro </h2>
-                    <h4 class="mainTitle">Download Page!</h4>
-                    <img class=" mt-3 mb-3" width="20%" src="https://bluetvpro.com/storage/icon.jpg" alt="">
-                    <div>
-                        <pre>
-file-size : 18MB
-version : 12.0
-</pre>
-                        <div class="mt-2 mb-3">
-                            <a class=" btn btn-success container-fluid  " href="https://bluetvpro.com/greenBtnClick" target="_blank">Download</a>
-                            <br>
-                            <a class=" text-warning" href="https://bluetvpro.com/solve-install-error"><span
-                                    style="font-size:10px;">Install တင်မရပါက Guide ကြည့်ရန်</span></a>
+            <div class="row pricing">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal plan-description">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 plan-description">
+                                <li> အခမဲ့ ကြည့်ခွင့်ပေးထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း /
+                                    ဒေါင်းလုပ်ဆွဲခြင်းများ ပြုလုပ်နိူင်ပါသည်
+                                </li>
+                                <li> ကြေငြာများပါဝင် </li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-outline-primary"
+                                onclick="openNewTab('https://play.google.com/store/apps/details?id=com.zkr.mm')">Download
+                                for free</button>
                         </div>
                     </div>
-                    <h5>About App : </h5>
-                    <p>
-                        မြန်မာနိုင်ငံရဲ့ အကောင်းဆုံး ယုံကြည်စိတ်ချရတဲ့ Movie App တစ်ခုဖြစ်ပါသည်  နောက်ဆုံးထွက်လူကြီးကြိုက်တွေပါ မြန်မာစာတန်းထိုးနဲ့ ကြည့်ရှုနိုင်တာမို့ Blue TV PRO App လေးကို ယခုပဲ Download ဆွဲပြီး ရယူလိုက်ပါ
-                    </p>
-                    <div class=" d-flex justify-content-evenly mt-3 mb-3">
-                        <a href="https://bluetvpro.com/playStoreClick" target="_blank"> <img height="35px"
-                                src="https://bluetvpro.com/storage/playstore.png" alt=""></a>
-                        <a href="https://bluetvpro.com/directLinkClick" target="_blank"> <img height="35px"
-                                src="https://bluetvpro.com/storage/direct.png" alt=""></a>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal plan-description">Premium 1 Mth</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">3000 Ks <small class="text-muted">/ mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4 plan-description">
+                                <li> App ထဲမှာတင်ထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း /
+                                    ဒေါင်းလုပ်ဆွဲခြင်းများ
+                                    ပြုလုပ်နိူင်ပါသည်
+                                </li>
+                                <li> ကြေငြာများမတတ်တော့ပါ </li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-primary"
+                                onclick="openNewTab('https://t.me/zkarpremium')">Get started</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 p-3 bg-white">
-                    <div>
-                        <h2 class=" text-center mb-4 fw-bold "> ကိုကြီးများနဲ့ ညီမလေးတို့ အကြိုက် </h2>
-                        <h4 class=" text-center mb-3"> အခမဲ့ Movie App! </h4>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal plan-description">Premium 3 Mths</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">8000 Ks <small class="text-muted">/ mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4 plan-description">
+                                <li> App ထဲမှာတင်ထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း /
+                                    ဒေါင်းလုပ်ဆွဲခြင်းများ
+                                    ပြုလုပ်နိူင်ပါသည်
+                                </li>
+                                <li> ကြေငြာများမတတ်တော့ပါ </li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-primary"
+                                onclick="openNewTab('https://t.me/zkarpremium')">Get started</button>
+                        </div>
                     </div>
-                    <div class=" d-flex justify-content-center ">
-                        <img width="100%" src="/storage/show.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal plan-description">Premium 5 Mths</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">13000 Ks <small class="text-muted">/ mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4 plan-description">
+                                <li> App ထဲမှာတင်ထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း /
+                                    ဒေါင်းလုပ်ဆွဲခြင်းများ
+                                    ပြုလုပ်နိူင်ပါသည်
+                                </li>
+                                <li> ကြေငြာများမတတ်တော့ပါ </li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-primary"
+                                onclick="openNewTab('https://t.me/zkarpremium')">Get started</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <button type="button" class="btn btn-lg btn-block btn-primary"
+                    onclick="openNewTab('https://www.facebook.com/mmxdarkside')">Like us on Facebook</button>
+
+                <button type="button" class="btn btn-lg btn-block btn-primary"
+                    onclick="openNewTab('https://t.me/zkarapp')">Follow us on Telegram</button>
+
+                <button type="button" class="btn btn-lg btn-block btn-primary" style="margin-bottom: 50px;"
+                    onclick="openNewTab('https://bit.ly/zkarapp')">Rate us</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mob">
+
+        <div class="row">
+            <div class="text-center my-3">
+                <img src="app-icon.png" alt="App Logo" class="itwo">
+            </div>
+            <div class="column">
+                <h1 class="" style="margin: 0 0 0 20px;">Zkar</h1>
+                <p class="" style="margin: 0 0 0 20px;">100K+ Users | Rating: 4.5</p>
+            </div>
+        </div>
+
+        <div class="text-center my-3">
+            <a href="#" class="btn btn-primary"
+                onclick="openNewTab('https://www.mediafire.com/file/r8q82vbyb2of8gh/Zkar+405.apk/file')">Direct Download</a>
+            <a href="#" class="btn btn-success"
+                onclick="openNewTab('https://play.google.com/store/apps/details?id=com.zkr.mm')">Download from
+                Playstore</a>
+        </div>
+
+
+
+        <!-- App Description -->
+        <p class="plan-description"> မြန်မာစာတန်းထိုး ဇာတ်လမ်းများ ၊ ဇာတ်လမ်းတွဲများနှင့် ၁၈+
+            စာတန်းထိုးဇာတ်လမ်းများ နှင့် ဘောလုံးပွဲစဉ်များကို App တစ်ခုထဲမှာ တစ်စုတစ်စည်းထဲ ရယူကြည့်ရှုလိုက်ပါ ။
+        </p>
+
+        <!-- App Screenshots -->
+        <div class="mob">
+            <div class="d-flex overflow-auto">
+                <img src="screenshot1.png" alt="Screenshot 1" class="img-fluid">
+                <img src="screenshot2.png" alt="Screenshot 2" class="img-fluid">
+                <img src="screenshot3.png" alt="Screenshot 3" class="img-fluid">
+                <img src="screenshot4.png" alt="Screenshot 4" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Plans and Package List -->
+        <div class="row pricing">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal plan-description">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 plan-description">
+                            <li> အခမဲ့ ကြည့်ခွင့်ပေးထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း /
+                                ဒေါင်းလုပ်ဆွဲခြင်းများ ပြုလုပ်နိူင်ပါသည်
+                            </li>
+                            <li> ကြေငြာများပါဝင် </li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary"
+                            onclick="openNewTab('https://play.google.com/store/apps/details?id=com.zkr.mm')">Download
+                            for free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal plan-description">Premium 1 Mth</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">3000 Ks <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 plan-description">
+                            <li> App ထဲမှာတင်ထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း / ဒေါင်းလုပ်ဆွဲခြင်းများ
+                                ပြုလုပ်နိူင်ပါသည်
+                            </li>
+                            <li> ကြေငြာများမတတ်တော့ပါ </li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary"
+                            onclick="openNewTab('https://t.me/zkarpremium')">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal plan-description">Premium 3 Mths</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">8000 Ks <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 plan-description">
+                            <li> App ထဲမှာတင်ထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း / ဒေါင်းလုပ်ဆွဲခြင်းများ
+                                ပြုလုပ်နိူင်ပါသည်
+                            </li>
+                            <li> ကြေငြာများမတတ်တော့ပါ </li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary"
+                            onclick="openNewTab('https://t.me/zkarpremium')">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal plan-description">Premium 5 Mths</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">13000 Ks <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 plan-description">
+                            <li> App ထဲမှာတင်ထားသော ဇာတ်လမ်းအားလုံးကို တိုက်ရိုက်ကြည့်ရှုခြင်း / ဒေါင်းလုပ်ဆွဲခြင်းများ
+                                ပြုလုပ်နိူင်ပါသည်
+                            </li>
+                            <li> ကြေငြာများမတတ်တော့ပါ </li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary"
+                            onclick="openNewTab('https://t.me/zkarpremium')">Get started</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-            <section id="news">
-            <div class="container">
-                <div class="row justify-content-center ">
-                    <div class="col-sm-8">
-                        <h3>Blue Tv Pro - Latest News</h3>
-                        
-                        
-                        <hr>
-                    </div>
-                                            <div class="col-sm-8 card p-3 mb-3 ">
+        <!-- Like, Follow, and Rating Buttons -->
+        <div class="text-center my-3">
+            <button class="btn btn-info" onclick="openNewTab('https://www.facebook.com/mmxdarkside')">Like Us</button>
+            <button class="btn btn-info" onclick="openNewTab('https://t.me/zkarapp')">Follow Us</button>
+            <button class="btn btn-info" onclick="openNewTab('https://bit.ly/zkarapp')">Rate Us</button>
+        </div>
 
-                            <a class=" text-dark" href="https://bluetvpro.com/new/3">
-                                <h3>Blue TV PRO 2024 ဗားရှင်းထွက်ပီဗျို့ </h3>
-                                                                    <div id="myNew3" data-chat-text="2024 မှာ Blue TV PRO နဲ့ အဖော်ပြုပီး စိတ်ချမ်းသာမှုတွေကို ခံစားလိုက်ပါ">
+        <button type="button" class="btn btn-lg btn-block btn-primary" onclick="openNewTab('https://t.me/zkarapp')"
+            style="font-family: 'mm'; color: white; background-color: rgb(109, 32, 171);""> App
+            အသုံးပြုနည်း </button>
+            
+    </div>
 
-                                    </div>
-
-                                    
-                                
-                                                            </a>
-                                                    </div>
-                    
-                </div>
-            </div>
-        </section>
-    
-    <!-- MDB -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
-
-            <script>
-        //to replace the link as clickable
-        function linkifyText(text) {
-            // Regular expression to match URLs
-            var urlRegex = /(https?:\/\/[^\s]+)/g;
-
-            return text.replace(urlRegex, function(url) {
-                return '<a class="text-primary" href="' + url + '" target="_blank">' + url + '</a>';
-            });
+    <script>
+        function openNewTab(url) {
+            window.open(url, '_blank');
         }
+    </script>
 
-                    var div = document.getElementById('myNew3');
-            div.innerHTML = " <p class=' font-family: `Noto Sans`, sans-serif;'>" + linkifyText(div.getAttribute(
-                'data-chat-text')) + "</p>";
-            </script>
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
